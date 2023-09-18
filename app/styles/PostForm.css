@@ -1,0 +1,36 @@
+.post-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin: 30px auto;
+}
+
+.post-form-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.post-form-input {
+  padding: 5px;
+}
+
+.post-form-submit-button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.post-form-number{
+    display:flex;
+    gap:5px;
+}
+
+.post-form-char-count {
+    color: gray;
+    font-size: 12px;
+    margin-top: 5px;
+    text-align:right
+  }

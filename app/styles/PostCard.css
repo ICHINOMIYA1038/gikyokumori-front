@@ -1,0 +1,207 @@
+/*
+
+height: 300+521px;
+*/
+
+@media (min-width: 801px) {
+  .PostCard {
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: antiquewhite;
+    width: 750px;
+    outline: groove 1px black;
+    margin: 25px auto;
+    font-size: 20px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
+      scale(1);
+    cursor: pointer;
+  }
+
+  .PostCard:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .PostCardclicked {
+    background-color: lightblue;
+    width: 750px;
+    outline: groove 1px black;
+    margin: 25px auto;
+    font-size: 20px;
+  }
+
+  .PostCardHeadar {
+    display: flex;
+    width: 736px;
+  }
+
+  .PostCardHeaderLeft {
+    flex-basis: 55%;
+  }
+
+  .PostCardHeaderRight {
+    flex-basis: 45%;
+  }
+
+  .PostCardHeaderRight img {
+    max-width: 100px;
+    max-height: 100px;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .PostCardUserProfile {
+    padding-left: 15px;
+    padding-top: 15px;
+    display: flex;
+  }
+  .PostCardUserProfile p {
+    line-height: 100px;
+  }
+
+  .PostCardTitle {
+    max-width: 400px;
+    text-align: left;
+    font-size: 40px;
+    word-wrap: break-word;
+    overflow-wrap: break-word; /* word-wrapの新しい名前 */
+    padding-left: 45px;
+  }
+
+  .PostCardDescription {
+    margin-left: 30px;
+    margin-top: 15px;
+  }
+
+  .PlotDetail {
+    margin-top: 0px;
+    display: flex;
+    gap: 6px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .PersonCount {
+    display: flex;
+    gap: 6px;
+  }
+
+  .Underline {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .Emphasize {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .PostCardFooter {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 15px;
+    width: "660px";
+    height: "450px";
+  }
+
+  .impressionContainer {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 90px;
+  }
+  #interactive-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .tagsContainer {
+    padding-top: 15px;
+    text-align: center;
+  }
+
+  .embedPDF {
+    width: 660px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 800px) {
+  .PostCard {
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    outline: groove 1px black;
+    margin: 25px auto;
+    font-size: 20px;
+    background-color: antiquewhite;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
+      scale(1);
+    cursor: pointer;
+  }
+
+  .PostCard:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .PostCardclicked {
+    background-color: lightblue;
+    width: 750px;
+    outline: groove 1px black;
+    margin: 25px auto;
+    font-size: 20px;
+  }
+
+  .PostCardclicked {
+    background-color: lightblue;
+    width: 750px;
+    outline: groove 1px black;
+    margin: 25px auto;
+    font-size: 20px;
+  }
+
+  .PostCardHeaderLeft,
+  .PostCardHeaderRight {
+    width: 100%;
+  }
+  .PostCardHeaderRight .tagsContainer {
+    flex-wrap: wrap;
+  }
+  .PostCardHeaderRight img {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+  }
+  .impressionContainer {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 15px;
+  }
+  .embedPDF {
+    width: 100%;
+    height: 500px;
+  }
+}
+
+.ViewDetailsButton {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  margin: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 50%;
+}
+
+.ViewDetailsButton:hover {
+  background-color: darkblue;
+}

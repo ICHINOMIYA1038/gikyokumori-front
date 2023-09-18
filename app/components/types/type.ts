@@ -1,0 +1,22 @@
+export type FormData = {
+  title: string;
+  catchphrase: string;
+  number_of_men: number;
+  number_of_women: number;
+  total_number_of_people: number;
+  playtime: string;
+  pdfFile: File | null;
+  image: File | null;
+  user_image_url: string;
+  tags: string[];
+  fee: string;
+  feeText: string;
+  credit: string;
+  creditText: string;
+  contact: string;
+  contactText: string;
+  modification: string;
+  modificationText: string;
+  condition: string;
+  conditionText: string;
+};
