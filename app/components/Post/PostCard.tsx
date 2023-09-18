@@ -188,7 +188,7 @@ function PostCard({ post }: any) {
       <div className="font-bold text-xl text-center">
         <p>{post.catchphrase}</p>
       </div>
-      <div className="h-96 w-full">
+      <div className="h-96 w-full relative">
         {post.image_url && (
           <img
             className="object-cover w-full h-full"
@@ -196,7 +196,14 @@ function PostCard({ post }: any) {
             alt="Avatar"
           />
         )}
-        {!post.image_url && <Image src="/NoImage.jpg" alt="Avatar" fill />}
+        {!post.image_url && (
+          <Image
+            src="/NoImage.jpg"
+            alt="Avatar"
+            fill={true}
+            style={{ objectFit: "contain" }}
+          />
+        )}
       </div>
       <div className="h-20 p-5 flex justify-around">
         <div className="" onClick={handleDownload}>
