@@ -492,7 +492,7 @@ body {
 /*TopImage*/
 .top-container {
   background-color: #ffd180;
-  background-image: url("/topImage.png");
+  background-image: url("/topimage.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -712,4 +712,3 @@ body {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
