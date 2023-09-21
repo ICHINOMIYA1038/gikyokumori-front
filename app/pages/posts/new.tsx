@@ -52,26 +52,7 @@ function Home() {
   if (Cookies.get("access-token")) {
     headers["access-token"] = Cookies.get("access-token") || "";
   }
-  useEffect(() => {
-    fetch(`${process.env.NEXT_PUBLIC_RAILS_API}/current_user`, {
-      headers,
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        setFormData((prevData) => ({
-          ...prevData,
-          user_image_url: data.user.image_url,
-        }));
-        if (data.status === "ng") {
-          //Loginにリダイレクト
-          router.push("/Login");
-        } else {
-        }
-      })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
-  }, []);
+  
   const [formData, setFormData] = useState<FormData>(initialFormData);
 
   return (
