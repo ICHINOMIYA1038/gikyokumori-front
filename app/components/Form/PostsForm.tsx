@@ -174,7 +174,7 @@ const PostsForm: FC<FormProps> = ({ formData, setFormData }) => {
   };
 
   return (
-    <div>
+    <div className="bg-white shadow-lg border border-black rounded-lg">
       <form className="p-10 " onSubmit={handleSubmit}>
         <h1 className="font-bold text-3xl">脚本登録</h1>
 

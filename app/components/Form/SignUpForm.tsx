@@ -9,8 +9,6 @@ import {
   Typography,
 } from "@mui/material/";
 import axios from "axios";
-import Cookies from "js-cookie";
-import { GetServerSideProps } from 'next';
 import Link from 'next/link'
 
 

@@ -40,8 +40,8 @@ function Home() {
 
   return (
     <Layout>
-      <div className="lg:flex">
-        <div>
+      <div className="lg:flex justify-center">
+        <div className="m-10">
           <PostsForm formData={formData} setFormData={setFormData} />
         </div>
         {/* PostCardEditコンポーネントの内容 */}
