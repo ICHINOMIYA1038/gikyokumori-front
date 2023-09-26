@@ -24,7 +24,7 @@ export async function middleware(request: NextRequest) {
     return NextResponse.next();
   } else {
     // ユーザー情報が "ng" の場合、"/Login" にリダイレクト
-    return NextResponse.redirect(`${process.env.NEXT_PUBLIC_SELF_URL}/Login`);
+    return NextResponse.redirect(`${process.env.NEXT_PUBLIC_SELF_URL}/Signin`);
   }
 }
 
