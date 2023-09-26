@@ -36,23 +36,6 @@ const initialFormData: FormData = {
 };
 
 function Home() {
-  const [user_id, setUser_id] = useState("");
-  const headers: HeadersInit = {
-    "Content-Type": "application/json",
-  };
-
-  if (Cookies.get("uid")) {
-    headers["uid"] = Cookies.get("uid") || "";
-  }
-
-  if (Cookies.get("client")) {
-    headers["client"] = Cookies.get("client") || "";
-  }
-
-  if (Cookies.get("access-token")) {
-    headers["access-token"] = Cookies.get("access-token") || "";
-  }
-  
   const [formData, setFormData] = useState<FormData>(initialFormData);
 
   return (
