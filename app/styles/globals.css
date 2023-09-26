@@ -196,21 +196,6 @@ original
   height: 64px;
 }
 
-/*
-.popup {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  padding: 20px;
-  border: 1px solid #ccc;
-  width:90%;
-  height:80%;
-  z-index: 500;
-}
-*/
-
 @media (min-width: 601px) {
   .popup {
     position: absolute;
@@ -304,14 +289,6 @@ hr {
 
 .supportDocument h2 {
   text-align: center;
-}
-
-.supportDocument h3 {
-  /* h3 のスタイルを指定 */
-}
-
-.supportDocument p {
-  /* p タグのスタイルを指定 */
 }
 
 .contactForm {
@@ -513,8 +490,7 @@ body {
 .top-main-lead-message h2 {
   margin: 42px 0 16px;
 }
-.top-sub-lead-message p {
-}
+
 .top-lead-button {
   background-color: #4caf50; /* Green */
   border: none;

@@ -136,9 +136,9 @@ const SignUpForm: React.FC = (props:any) => {
   return (
 <Container component="main" maxWidth="xs">
   <Box style={{ margin: "10px" }}>
-    <Typography component="h1" variant="h5">
-      新規ユーザー登録
-    </Typography>
+        <h2 className="font-bold text-2xl mb-6 text-center">
+          新規登録
+        </h2>
     <Box component="form" onSubmit={handleSubmit} style={{ textAlign: "center" }}>
       <TextField
         style={{ width: "70%", margin: "5px" }}

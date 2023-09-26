@@ -10,14 +10,14 @@ export const TagSelecter = ({ onChildStateChange, tags }: any) => {
     tagnames = tags;
   } else {
     tagnames = [
-      "ホラー",
-      "アクション",
-      "感動",
-      "不条理劇",
-      "コメディ",
-      "会話劇",
-      "アングラ",
-      "コンテンポラリー",
+      "vero",
+      "similique",
+      "velit",
+      "sunt",
+      "suscipit",
+      "odio",
+      "aut",
+      "vel",
       "抽象劇",
       "具象劇",
       "群像劇",
@@ -75,7 +75,7 @@ export const TagSelecter = ({ onChildStateChange, tags }: any) => {
           filterSelectedOptions //選択されたオプションを非表示にする
           options={tagnames.map((option: any) => option)} //ドロップダウンメニューの項目：文字列の配列
           value={selectedTags} //入力欄に表示される値：①のときは文字列の配列、指定しないときは文字列 --- ③
-          onChange={handleInputChange} //コールバック関数（オプションを選択か「Enter」を押すとイベントが起きる）： function --- ④
+          onChange={handleInputChange} //コールバック関数 --- ④
           renderInput={(params: any) => (
             <TextField //importしたコンポーネント
               {...params}

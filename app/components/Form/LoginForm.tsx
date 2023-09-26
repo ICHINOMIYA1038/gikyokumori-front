@@ -102,7 +102,7 @@ const LoginForm: React.FC = (props:any) => {
   return (
     <Container component="main" maxWidth="xs">
       <Box style={{margin:"10px"}}>
-        <h2>
+        <h2 className="font-bold text-2xl mb-6 text-center">
           ログイン
         </h2>
         <Box component="form" onSubmit={handleSubmit} style={{textAlign:"center"}}>
