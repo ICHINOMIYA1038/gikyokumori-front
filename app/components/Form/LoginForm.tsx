@@ -102,9 +102,9 @@ const LoginForm: React.FC = (props:any) => {
   return (
     <Container component="main" maxWidth="xs">
       <Box style={{margin:"10px"}}>
-        <Typography component="h1" variant="h5">
+        <h2>
           ログイン
-        </Typography>
+        </h2>
         <Box component="form" onSubmit={handleSubmit} style={{textAlign:"center"}}>
           <TextField
             style={{margin:"5px auto"}}
